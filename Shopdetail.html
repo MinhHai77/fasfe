@@ -1,0 +1,1017 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-main: #81c408;
+    --bs-secondary:#ffb524;
+}
+@media (min-width: 1200px) {
+    .display-6 {
+        font-size: 2.5rem;
+    }
+
+    .col-xl-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+    .hero-header,
+    .page-header {
+        margin-top: 152px !important;
+    }
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    transition: 0.5s;
+    background: var(--bs-white);
+    border: 0;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+.bg-primary {
+    background-color: var(--bg-main) !important;
+}
+.topbar {
+    padding: 20px;
+    border-radius: 230px 100px;
+}
+.topbar .top-info {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+.ps-2 {
+    padding-left: .5rem !important;
+}
+.topbar .top-link {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+small,.small {
+    font-size: 0.875em;
+}
+.text-secondary {
+    color: var(--bs-secondary) !important;
+}
+.navbar {
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.display-6 {
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 800;
+    line-height: 1.2;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.text-primary {
+    color: var(--bg-main) !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.btn.border-secondary {
+    transition: 0.5s;
+}
+.fa-search:before {
+    content: "\f002";
+}
+.border-secondary {
+    border-color: var(--bs-secondary) !important;
+}
+.me-4 {
+    margin-right: 1.5rem !important;
+}
+a{
+    color: var(--bg-main);
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+.page-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)), url("https://bizweb.dktcdn.net/100/413/756/collections/jordan-2.jpg?v=1617462460240");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g-4,.gy-4 {
+    --bs-gutter-y: 1.5rem;
+}
+.rounded {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+.border {
+    border: 1px solid #dee2e6 !important;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.fw-bold {
+    font-weight: 700 !important;
+}
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(129, 196, 8, .25);
+}
+.form-control:focus {
+    color: #747d88;
+    background-color: #fff;
+    border-color: #c0e284;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(129, 196, 8, .25);
+}
+.fruite .fruite-categorie .fruite-name {
+    line-height: 40px;
+}
+.fruite .fruite-categorie .fruite-name a {
+    transition: 0.5s;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+.border-secondary {
+    border-color: var(--bs-secondary) !important;
+}
+.owl-carousel,
+.owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.vesitable .vesitable-item .vesitable-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+}
+.vesitable .vesitable-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+.owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 260.25px;
+    margin-right: 25px;
+    height: 652px;
+}
+.border-primary {
+    border-color: var(--bg-main) !important;
+}
+.vesitable .vesitable-item .vesitable-img img:hover {
+    transform: scale(1.2);
+}
+.vesitable .vesitable-item .vesitable-img img {
+    transition: 0.5s;
+}
+.vesitable .vesitable-item {
+    height: 100%;
+    transition: 0.5s;
+}
+.vesitable .owl-stage {
+    margin: 50px 0;
+    position: relative;
+    transform: translate3d(-1426px, 0px, 0px);
+    transition: all 0s ease 0s;
+    width: 4564px;
+}
+.fa-angle-left,.fa-angle-right{
+    color: var(--bg-main);
+}
+.vesitable .owl-nav .owl-prev {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.vesitable .owl-nav .owl-next {
+    position: absolute;
+    top: -8px;
+    right: 88px;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.bg-dark {
+    background-color: #45595b !important;
+}
+.text-white-50 {
+    color: rgba(255, 255, 255, .5) !important;
+}
+.pt-5 {
+    padding-top: 3rem !important;
+}
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+.btn-link {
+    font-weight: 400;
+    color: var(--bg-main);
+    text-decoration: none;
+}
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bg-main);
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+.btn-primary{
+    background-color: var(--bs-secondary);
+}
+.owl-item .active{
+    height: 652px;
+}
+    </style>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid fixed-top" style="top: 0px;">
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.ff.png" width="300">
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+							 <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sản phẩm</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="shop.html" class="dropdown-item">Nam</a>
+                                    <a href="shop2.html" class="dropdown-item">Nữ</a>
+                                    
+                                </div>
+                            </div>
+                        
+							<a href= "blog.html" class="nav-item nav-link">Blog</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">FASFE</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="about.html" class="dropdown-item">Về chúng tôi</a>
+                                    
+                                    <a href="testimonial.html" class="dropdown-item">Đánh giá từ khách hàng</a>
+                                  
+                                </div>
+                            </div>
+							
+                            <a href="contact.html" class="nav-item nav-link ">Liên hệ</a>
+						
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="cart.html" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="dangky.html" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </div>
+    
+	<!-- banner -->
+    <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Chi tiết</h1>
+            
+        </div>
+    <div class="container-fluid py-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-8 col-xl-9">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="border rounded">
+                                <a href="#">
+                                    <img width="100%" src="img/nam3 (1).jpg" alt="Image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="fw-bold mb-3">Adidas Alphabounce Beyond Cloud White</h4>
+                            <p class="mb-3">Category: Adidas</p>
+                            <h5 class="fw-bold mb-3">1.500.000 VND</h5>
+                            <div class="d-flex mb-4">
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="mb-4">Fullbox A.l.p.h.a.bounce Beyond Cloud White. 2 ver Trắng / Đen. Phù hợp: nam nữ, đi học, đi làm, tập gym. Size: 36-44. Êm chân, thoáng khí. Giao hàng toàn quốc. Bảo hành 3 tháng. Đổi trả dễ dàng. Streetwear, trẻ trung năng động.</p>
+                            
+                            <div class="input-group quantity mb-5" style="width: 100px;">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-minus rounded-circle bg-light border">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="cart.html" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ hàng</a>
+                        </div>
+                        <div class="col-lg-12">
+                            <nav>
+                                <div class="nav nav-tabs mb-3">
+                                    <button class="nav-link active border-white border-bottom-0" type="button" role="tab"
+                                        id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                                        aria-controls="nav-about" aria-selected="true">Miêu tả</button>
+                                    <button class="nav-link border-white border-bottom-0" type="button" role="tab"
+                                        id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
+                                        aria-controls="nav-mission" aria-selected="false">Đánh giá</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content mb-5">
+                                <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                                    <p>Sự hợp tác vào khoảng thời gian cuối năm 2017 giữa Nike và Off-White đã tạo nên một cơn địa chấn trong cộng đồng những
+                                    người yêu sneakers bởi độ nóng đến từ hai cái tên cũng như vẻ đẹp đến từ mười phiên bản sneakers của BST này. Phiên bản
+                                    này đã nhanh chóng trở thành một hiện tượng, dẫn đến việc giá resell tăng lên cao ngất ngưỡng cũng như những phiên bản
+                                    sneakers được customize theo motif này cũng xuất hiện. Mang trên mình phối màu “Chicago” cổ điển, đôi giày còn được
+                                    trang bị điểm nhấn đến từ những đường chỉ, những câu từ được đặt trong dấu ngoặc kép được đặt rải rác trên thân giày hay
+                                    những chi tiết</p>
+                                    <div class="px-2">
+                                        <div class="row g-4">
+                                            <div class="col-6">
+                                                <div
+                                                    class="row bg-light align-items-center text-center justify-content-center py-2">
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Size</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-0">36 37 38 39</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row text-center align-items-center justify-content-center py-2">
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Loại sản phẩm</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Nike</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Màu sắc</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Trắng</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row text-center align-items-center justify-content-center py-2">
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Mức Giá</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-0">300.000 VND</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Thương hiệu</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-0">Nike</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                                    <div class="d-flex">
+                                        <img src="https://themewagon.github.io/fruitables//img/avatar.jpg" class="img-fluid rounded-circle p-3"
+                                            style="width: 100px; height: 100px;" alt="">
+                                        <div class="">
+                                            <p class="mb-2" style="font-size: 14px;">April 12, 2024</p>
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Jason Smith</h5>
+                                                <div class="d-flex mb-3">
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p>Sản phẩm tốt</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="https://themewagon.github.io/fruitables//img/avatar.jpg" class="img-fluid rounded-circle p-3"
+                                            style="width: 100px; height: 100px;" alt="">
+                                        <div class="">
+                                            <p class="mb-2" style="font-size: 14px;">April 12, 2024</p>
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Sam Peters</h5>
+                                                <div class="d-flex mb-3">
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p class="text-dark">Sản phẩm chất lượng</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="nav-vision" role="tabpanel">
+                                    <p class="text-dark">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+                                        sit. Aliqu diam
+                                        amet diam et eos labore. 3</p>
+                                    <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.
+                                        Clita erat ipsum et lorem et sit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <h4 class="mb-5 fw-bold">Bình luận</h4>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="border-bottom rounded">
+                                        <input type="text" class="form-control border-0 me-4" placeholder="Nhập tên *">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="border-bottom rounded">
+                                        <input type="email" class="form-control border-0" placeholder="Nhập email*">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="border-bottom rounded my-4">
+                                        <textarea name="" id="" class="form-control border-0" cols="30" rows="8"
+                                            placeholder="Viết đánh giá  *" spellcheck="false"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-flex justify-content-between py-3 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 me-3">Đánh giá sao:</p>
+                                            <div class="d-flex align-items-center" style="font-size: 12px;">
+                                                <i class="fa fa-star text-muted"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn border border-secondary text-primary rounded-pill px-4 py-3">
+                                            Gửi bình luận</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                    <div class="row g-4 fruite">
+                        <div class="col-lg-12">
+                            <div class="input-group w-100 mx-auto d-flex mb-4">
+                                <input type="search" class="form-control p-3" placeholder="Tìm kiếm"
+                                    aria-describedby="search-icon-1">
+                                <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                            </div>
+                            <div class="mb-4">
+                                <h4>Danh mục</h4>
+                                <ul class="list-unstyled fruite-categorie">
+                                    <li>
+                                        <div class="d-flex justify-content-between fruite-name">
+                                            <a href="shop - Copy.html">
+                                                <i class="fas me-2"></i>Adidas</a>
+                                            
+                                            <span>(3)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex justify-content-between fruite-name">
+                                            <a href="shop - Copy.html"><i class="fas me-2"></i>Nike</a>
+                                            <span>(5)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex justify-content-between fruite-name">
+                                            <a href="shop - Copy.html"><i class="fas me-2"></i>New blance</a>
+                                            <span>(2)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex justify-content-between fruite-name">
+                                            <a href="shop - Copy.html"><i class="fas me-2"></i>Converse</a>
+                                            <span>(8)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex justify-content-between fruite-name">
+                                            <a href="shop - Copy.html"><i class="fas me-2"></i>Jordan</a>
+                                            <span>(5)</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <h4 class="mb-4">Thông tin nổi bật</h4>
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="rounded me-4 mb-2" style="width: 100px; height: 100px;">
+                                    <img src="https://cf.shopee.vn/file/bd4104b5a81ee2a4cefaefa66f6751c2" class="img-fluid rounded" alt="Image">
+                                </div>
+                                <div>
+                                    <h6 class="mb-2">Vans Style 36 Dress Blue</h6>
+                                    <div class="d-flex mb-2">
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <h6 class="fw-bold me-2">1.000.000 </h6>
+                                        <h6 class="text-danger text-decoration-line-through">2.500.000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="rounded me-4 mb-2" style="width: 100px; height: 100px;">
+                                    <img src="https://vlpfashion.com/wp-content/uploads/2021/09/cac-mau-giay-bitis-hunter.jpg" class="img-fluid rounded" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="mb-2">Vans Style 36</h6>
+                                    <div class="d-flex mb-2">
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <h6 class="fw-bold me-2">1.500.000</h6>
+                                        <h6 class="text-danger text-decoration-line-through">2.000.000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="rounded me-4 mb-2" style="width: 100px; height: 100px;">
+                                    <img src="https://cf.shopee.vn/file/fe4bd8bb99e1c3086a71d4104a5cc9a8" class="img-fluid rounded" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="mb-2">Vans OG Era Varsity</h6>
+                                    <div class="d-flex mb-2">
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <h6 class="fw-bold me-2">1.800.000 </h6>
+                                        <h6 class="text-danger text-decoration-line-through">2.500.000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="rounded me-4 mb-2" style="width: 100px; height: 100px;">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP.ywlxJbVg6Lm8lU2Gv0aamwHaHa&pid=Api&P=0&h=220" class="img-fluid rounded" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="mb-2">Dress Blue</h6>
+                                    <div class="d-flex mb-2">
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <h6 class="fw-bold me-2">1.200.000</h6>
+                                        <h6 class="text-danger text-decoration-line-through">2.000.000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="rounded me-4 mb-2" style="width: 100px; height: 100px;">
+                                    <img src="https://thesneakerhouse.com/wp-content/uploads/2018/09/giay-jordan-1-mid-white.jpg" class="img-fluid rounded" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="mb-2">Vans Style 36 Sunflower</h6>
+                                    <div class="d-flex mb-2">
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <h6 class="fw-bold me-2">2.000.000 VND</h6>
+                                        <h6 class="text-danger text-decoration-line-through">3.500.000 vnd</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="rounded me-4 mb-2" style="width: 100px; height: 100px;">
+                                    <img src="https://giaysneakerhcm.com/wp-content/uploads/2020/09/giay-air-jordan-1-low-co-thap-xanh-la-1.jpg" class="img-fluid rounded" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="mb-2">Nike
+                                    Air More Uptempo Black</h6>
+                                    <div class="d-flex mb-2">
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star text-secondary"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <h6 class="fw-bold me-2">1.750.000 VND&nbsp;</h6>
+                                        <h6 class="text-danger text-decoration-line-through">2.000.000 vnd</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center my-4">
+                                <a href="shop - Copy.html"
+                                    class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <img src="img/banner-shop 2.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);">
+                                    <!-- <h3 class="text-secondary fw-bold">Shop <br> Giày</h3> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="fw-bold mb-0">Sản phẩm liên quan</h1>
+            <div class="vesitable">
+                <div class="owl-carousel vegetable-carousel justify-content-center owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                            style="transform: translate3d(-1426px, 0px, 0px); transition: all 0s ease 0s; width: 4564px;">
+                            <div class="owl-item cloned" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="https://themewagon.github.io/fruitables//img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Adidas</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Potatoes</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te
+                                            incididunt</p>
+                                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                            <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                            <a href="#"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="https://themewagon.github.io/fruitables//img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Nike</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Nike Air Force 1 White Low</h4>
+                                        <p>Chất liệu da tổng hợp bền bỉ. Tất cả chi tiết được thiết kế độc đáo với màu trắng nguyên khối bao quanh toàn bộ thân
+                                        giày. Xu hướng mang giày trắng của giới trẻ giúp cho Air Force 1 thuộc top sản phẩm được yêu thích và bán chạy nhất
+                                        trong những năm gần đây.</p>
+                                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                            <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                            <a href="#"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="https://themewagon.github.io/fruitables/img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Air Max 270 Black White</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Air Force 1 Low Just Do It</h4>
+                                        <p>
+                                            Giày thể thao Nam Nữ màu Đen. Phong cách streetwear trẻ trung năng động gắn liền với dòng giày iconic này. Hàng mới về
+                                            Full box. Giao hàng toàn quốc. Bảo hành 3 tháng. Đổi trả dễ dàng khi mua Giày Sneakers Air Max 270 Nam Nữ màu Đen
+                                            Trainers Rubber Unisex in Black.
+                                        </p>
+                                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                            <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                            <a href="#"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="https://themewagon.github.io/fruitables//img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Air Force 1 Low G-Dragon</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Air Force 1 Low G-Dragon</h4>
+                                        <p>Fullbox A.i.r Force 1 PEACEMINUSONE “Para-noise”. Phù hợp: Nam Nữ, đi học, đi làm, hoạt động thể thao. Size: 36-44. Chất
+                                        liệu: Da. Giao hàng toàn quốc. Bảo hành 3 tháng. Đổi trả dễ dàng. Streetwear, trẻ trung năng động.</p>
+                                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                            <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
+                                            <a href="#"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="https://themewagon.github.io/fruitables//img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Nike</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Air Jordan High OG Chicago</h4>
+                                        <p>Fullbox A.i.r Force 1 PEACEMINUSONE “Para-noise”. Phù hợp: Nam Nữ, đi học, đi làm, hoạt động thể thao. Size: 36-44. Chất
+                                        liệu: Da</p>
+                                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                            <p class="text-dark fs-5 fw-bold">650.000 VND</p>
+                                            <a href="#"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="img/jumpman-mvp-shoes-JV1HCs.png" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Jorden</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Air Max 270 White</h4>
+                                        
+										<p>Full box</p> 
+                                        <p>Size: 36-44</p>
+										<p>Phù hợp: Nam, nữ</p> 
+										<p>Chất liệu: Da</p>
+
+<div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="text-dark fs-5 fw-bold">1.000.000 VND</p>
+                                            <a href="shop2.html"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa me-2 text-primary"></i>Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitabl"> <img src="img/court-royale-2-low-shoe-fjdwrF.png" class="img-fluid w-100 rounded-top bg-light"
+                                            alt="">
+                                        
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Nike</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Nike Style 36</h4>
+                                        
+                                        <p>Full box</p> 
+                                        <p>Size: 36-44</p>
+										<p>Phù hợp: Nam, nữ</p> 
+										<p>Chất liệu: Da</p>
+<div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="text-dark fs-5 fw-bold">2.000.000 VND </p>
+                                             <a href="shop2.html"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa me-2 text-primary"></i>Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="img/pegasus-41-road-running-shoes-RZm89S.png" class="img-fluid w-100 rounded-top bg-light"
+                                            alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Nike</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4>Nike Air 1 </h4>
+                                        
+                                  
+                                        <p>Full box</p> 
+                                        <p>Size: 36-44</p>
+										<p>Phù hợp: Nam, nữ</p> 
+										<p>Chất liệu: Vải phối da lộn</p>
+
+<div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="text-dark fs-5 fw-bold">1.800.000 VND</p>
+                                             <a href="shop2.html"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa me-2 text-primary"></i>Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 260.25px; margin-right: 25px;">
+                                <div class="border border-primary rounded position-relative vesitable-item">
+                                    <div class="vesitable-img">
+                                        <img src="img/pegasus-41-road-running-shoes-SKDkNs.png" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                        style="top: 10px; right: 10px;">Nike</div>
+                                    <div class="p-4 pb-0 rounded-bottom">
+                                        <h4> Force 1 Low</h4>
+                                       
+                                      <p>Full box</p> 
+                                        <p>Size: 36-44</p>
+										<p>Phù hợp: Nam, nữ</p> 
+										<p>Chất liệu: Da</p>
+<div class="d-flex justify-content-between flex-lg-wrap">
+                      <p class="text-dark fs-5 fw-bold">1.780.000 VND</p>
+                                             <a href="shop2.html"
+                                                class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i
+                                                    class="fa me-2 text-primary"></i>Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav">
+                        <div class="owl-prev">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="owl-next">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+   <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                         <div class="col-lg-3">
+                            <a href="#">
+                                <img src="img/logo.ft.png" width="190">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Email">
+                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Liên hệ với Chúng tôi</h4>
+                            <p>Địa chỉ: 03 CVPM Quang Trung, Tân Chánh Hiệp, Q12, Tp.HCM</p>
+                            <p>Email: Example@gmail.com</p>
+                            <p>Điện thoại: 0792129889</p>                                                     
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Dịch vụ Thanh toán</h4>
+                            <p>Thanh toán</p>
+                            <img src="img/payment.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                   <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
