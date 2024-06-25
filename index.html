@@ -1,1367 +1,892 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>THE HOTH STORE</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
-      rel="stylesheet"
-    />
+    <head>
+        <meta charset="utf-8">
+        <title>THE HOTH STORE</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Navbar start -->
-    <div class="container-fluid fixed-top">
-      <div class="container px-0">
-        <nav class="navbar navbar-light bg-white navbar-expand-xl">
-          <a href="index.html" class="navbar-brand"
-            ><img src="img/logo.ff.png" width="300"
-          /></a>
-          <button
-            class="navbar-toggler py-2 px-3"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span class="fa fa-bars text-primary"></span>
-          </button>
-          <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-            <div class="navbar-nav mx-auto">
-              <a href="index.html" class="nav-item nav-link act">Trang chủ</a>
-              <div class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  >Sản phẩm</a
-                >
-                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                  <a href="shop - Copy.html" class="dropdown-item">Nam</a>
-                  <a href="shop2.html" class="dropdown-item">Nữ</a>
-                </div>
-              </div>
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-              <a href="blog.html" class="nav-item nav-link">Blog</a>
-              <div class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  >FASFE</a
-                >
-                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                  <a href="about.html" class="dropdown-item">Về chúng tôi</a>
+    <body>
 
-                  <a href="testimonial.html" class="dropdown-item"
-                    >Đánh giá từ khách hàng</a
-                  >
-                </div>
-              </div>
-
-              <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
-            </div>
-            <div class="d-flex m-3 me-0">
-              <button
-                class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
-                data-bs-toggle="modal"
-                data-bs-target="#searchModal"
-              >
-                <i class="fas fa-search text-primary"></i>
-              </button>
-              <a href="cart.html" class="position-relative me-4 my-auto">
-                <i class="fa fa-shopping-bag fa-2x"></i>
-                <span
-                  class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
-                  style="top: -5px; left: 15px; height: 20px; min-width: 20px;"
-                  >3</span
-                >
-              </a>
-              <a href="dangky.html" class="my-auto">
-                <i class="fas fa-user fa-2x"></i>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!-- Navbar End -->
-
-    <!-- Modal Search Start -->
-    <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span id="search-icon-1" class="input-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
-          </div>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
         </div>
-      </div>
-    </div>
-    <!-- Modal Search End -->
+        <!-- Spinner End -->
 
-    <!-- Hero Start -->
-    <div class="container-fluid py-5 mb-5 hero-header">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-md-12 col-lg-7">
-            <h4 class="mb-3 text-secondary">Authentic 100%</h4>
-            <h1 class="mb-5 display-3 text-white text-primary">
-              "Đa dạng mọi phong cách của bạn"
-            </h1>
-          </div>
-          <div class="col-md-12 col-lg-7"></div>
-          <div class="col-md-12 col-lg-5">
-            <div
-              id="carouselId"
-              class="carousel slide position-relative"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active rounded">
-                  <img
-                    src="img/bìa2(1)(1).png"
-                    class="img-fluid w-100 h-100 bg-secondary rounded"
-                    alt="First slide"
-                  />
-                  <a href="#" class="btn px-4 py-2 text-white rounded"
-                    >NEW ARRIVAL</a
-                  >
-                </div>
 
-                <div class="carousel-item rounded">
-                  <img
-                    src="img/bìa3(1)(1).png"
-                    class="img-fluid w-100 h-100 rounded"
-                    alt="Second slide"
-                  />
-                  <a href="#" class="btn px-4 py-2 text-white rounded"
-                    >MUA NGAY</a
-                  >
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand"><img src="img/logo.ff.png" width="300"></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link act">Trang chủ</a>
+							 <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sản phẩm</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="shop - Copy.html" class="dropdown-item">Nam</a>
+                                    <a href="shop2.html" class="dropdown-item">Nữ</a>
+                                    
+                                </div>
+                            </div>
+                        
+							<a href= "blog.html" class="nav-item nav-link">Blog</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">FASFE</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="about.html" class="dropdown-item">Về chúng tôi</a>
+                                  
+                                    <a href="testimonial.html" class="dropdown-item">Đánh giá từ khách hàng</a>
+                                  
+                                </div>
+                            </div>
+							
+                            <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+						
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="cart.html" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="dangky.html" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Hero End -->
+        <!-- Navbar End -->
 
-    <!-- Featurs Section Start -->
-    <div class="container-fluid featurs py-5">
-      <div class="container py-5">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="featurs-item text-center rounded p-4">
-              <div
-                class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto"
-              >
-                <span><i class="fas fa-car-side fa-3x text-white"></i></span>
-              </div>
-              <div class="featurs-content text-center">
-                <h5>Miễn phí vận chuyển</h5>
-                <p class="mb-0">Bill trên 1.000.000VND</p>
-              </div>
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="featurs-item text-center rounded p-4">
-              <div
-                class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto"
-              >
-                <i class="fas fa-user-shield fa-3x text-white"></i>
-              </div>
-              <div class="featurs-content text-center">
-                <h5>Chính sách bảo hành</h5>
-                <p class="mb-0">Bảo hành trong 12 tháng</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="featurs-item text-center rounded p-4">
-              <div
-                class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto"
-              >
-                <i class="fas fa-exchange-alt fa-3x text-white"></i>
-              </div>
-              <div class="featurs-content text-center">
-                <h5>Trả hàng trong 15 Day</h5>
-                <p class="mb-0">Đổi trả trong vòng 15 ngày</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="featurs-item text-center rounded p-4">
-              <div
-                class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto"
-              >
-                <i class="fa fa-phone-alt fa-3x text-white"></i>
-              </div>
-              <div class="featurs-content text-center">
-                <h5>Hỗ trợ 24/7</h5>
-                <p class="mb-0">Hỗ trợ mọi lúc mọi nơi</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Featurs Section End -->
+        <!-- Modal Search End -->
 
-    <!-- Fruits Shop Start-->
-    <div class="container-fluid fruite py-5">
-      <div class="container py-5">
-        <div class="tab-class text-center">
-          <div class="row g-4">
-            <div class="col-lg-4 text-start">
-              <h1>NEW ARRIVALS</h1>
-            </div>
-            <div class="col-lg-8 text-end">
-              <ul class="nav nav-pills d-inline-flex text-center mb-5">
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill active"
-                    data-bs-toggle="pill"
-                    href="#tab-1"
-                  >
-                    <span class="text-dark" style="width: 130px;">Tất cả</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex py-2 m-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-2"
-                  >
-                    <span class="text-dark" style="width: 130px;"
-                      >Giày Nam</span
-                    >
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-3"
-                  >
-                    <span class="text-dark" style="width: 130px;">Giày Nữ</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-4"
-                  >
-                    <span class="text-dark" style="width: 130px;"
-                      >Bestseller</span
-                    >
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px;">Sale</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-content">
-            <div id="tab-1" class="tab-pane fade show p-0 active">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nu7.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.800.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
+
+        <!-- Hero Start -->
+        <div class="container-fluid py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+					<div class="col-md-12 col-lg-7">
+                        <h4 class="mb-3 text-secondary">Authentic 100%</h4>
+                        <h1 class="mb-5 display-3 text-white text-primary">"Đa dạng mọi phong cách của bạn"</h1> 
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/n6.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
+                    <div class="col-md-12 col-lg-7"></div>
+                    <div class="col-md-12 col-lg-5">
+                        <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active rounded">
+                                    <img src="img/bìa2(1)(1).png" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                                    <a href="#" class="btn px-4 py-2 text-white rounded">NEW ARRIVAL</a>
+                                </div>
+								
+                                <div class="carousel-item  rounded">
+                                    <img src="img/bìa3(1)(1).png" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                    <a href="#" class="btn px-4 py-2 text-white rounded">MUA NGAY</a>
+                                </div>
+                            </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.750.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/n8.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.500.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/n4.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.500.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nu3.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày Nam/Unisex</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.800.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nu1.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>GIày Nam/Unisex</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.650.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/n5.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày Nam/Unisex</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.600.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nam2.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày Nam/Unisex</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.800.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div id="tab-2" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nam1.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày Nam/Unisex</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.600.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nm2.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày Nam/Unisex</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.700.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="tab-3" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nuu1.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.800.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nuu2.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.800.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="tab-4" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/best.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>UNISEX NAM/NỮ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.800.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/nam2.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>UNISEX NAM/NỮ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.800.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="tab-5" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/n8.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.500.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/n4.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày thời trang nữ</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.500.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="img/n5.jpg"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Giày Nam/Unisex</h4>
-                          <p>GO WALK</p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              1.600.000 VND
-                            </p>
-                            <a
-                              href="Shopdetail.html"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              >Chi tiết</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Fruits Shop End-->
+        <!-- Hero End -->
 
-    <!-- Vesitable Shop Start-->
-    <div class="container-fluid vesitable py-5">
-      <div class="container py-5">
-        <h1 class="mb-0">Chia sẻ hình ảnh phong cách của bạn @FASFE_VN</h1>
-        <p></p>
-        <div class="owl-carousel vegetable-carousel justify-content-center">
-          <div
-            class="border border-primary rounded position-relative vesitable-item"
-          >
-            <div class="vesitable-img">
-              <img
-                src="img/st1.png"
-                class="img-fluid w-100 rounded-top"
-                alt=""
-              />
+
+        <!-- Featurs Section Start -->
+        <div class="container-fluid featurs py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                               <span><i class="fas fa-car-side fa-3x text-white"></i></span>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Miễn phí vận chuyển</h5>
+                                <p class="mb-0">Bill trên 1.000.000VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-user-shield fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Chính sách bảo hành</h5>
+                                <p class="mb-0">Bảo hành trong 12 tháng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-exchange-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Trả hàng trong 15 Day</h5>
+                                <p class="mb-0">Đổi trả trong vòng 15 ngày</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fa fa-phone-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Hỗ trợ 24/7</h5>
+                                <p class="mb-0">Hỗ trợ mọi lúc mọi nơi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="p-4 rounded-bottom">
-              <h4>KOL</h4>
-              <div class="d-flex justify-content-between flex-lg-wrap"></div>
-            </div>
-          </div>
-          <div
-            class="border border-primary rounded position-relative vesitable-item"
-          >
-            <div class="vesitable-img">
-              <img
-                src="img/st2.png"
-                class="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div class="p-4 rounded-bottom">
-              <h4>CHA EUN-WOO</h4>
-              <div class="d-flex justify-content-between flex-lg-wrap"></div>
-            </div>
-          </div>
-          <div
-            class="border border-primary rounded position-relative vesitable-item"
-          >
-            <div class="vesitable-img">
-              <img
-                src="img/st3.png"
-                class="img-fluid w-100 rounded-top bg-light"
-                alt=""
-              />
-            </div>
-            <div class="p-4 rounded-bottom">
-              <h4>KOL</h4>
-              <div class="d-flex justify-content-between flex-lg-wrap"></div>
-            </div>
-          </div>
-          <div
-            class="border border-primary rounded position-relative vesitable-item"
-          >
-            <div class="vesitable-img">
-              <img
-                src="img/st5.png"
-                class="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div class="p-4 rounded-bottom">
-              <h4>KOL</h4>
-              <div class="d-flex justify-content-between flex-lg-wrap"></div>
-            </div>
-          </div>
-          <div
-            class="border border-primary rounded position-relative vesitable-item"
-          >
-            <div class="vesitable-img">
-              <img
-                src="img/st4.png"
-                class="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div class="p-4 rounded-bottom">
-              <h4>Mẫu ảnh nhà HoTh</h4>
-              <div class="d-flex justify-content-between flex-lg-wrap"></div>
-            </div>
-          </div>
-          <div
-            class="border border-primary rounded position-relative vesitable-item"
-          >
-            <div class="vesitable-img">
-              <img
-                src="img/st6.png"
-                class="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div class="p-4 rounded-bottom">
-              <h4>CHA EUN-WOO</h4>
-              <div class="d-flex justify-content-between flex-lg-wrap"></div>
-            </div>
-          </div>
-          <div
-            class="border border-primary rounded position-relative vesitable-item"
-          >
-            <div class="vesitable-img">
-              <img
-                src="img/st7.png"
-                class="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div class="p-4 rounded-bottom">
-              <h4>JSOL</h4>
-              <div class="d-flex justify-content-between flex-lg-wrap"></div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Vesitable Shop End -->
+        <!-- Featurs Section End -->
 
-    <!-- Banner Section Start-->
-    <div class="container-fluid banner bg-secondary my-5">
-      <div class="container py-5">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6">
-            <div class="py-4">
-              <h1 class="display-3 text-white">MUA 2 Tính Tiền 1</h1>
-              <p class="fw-normal display-3 text-dark mb-4">Online và Store</p>
-              <p class="mb-4 text-dark">
-                Chương trình áp dụng từ ngày 03 đến 06 mỗi tháng
-              </p>
-              <a
-                href="#"
-                class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5"
-                ><span>MUA NGAY</span></a
-              >
+
+        <!-- Fruits Shop Start-->
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1>NEW ARRIVALS</h1>
+                        </div>
+                        <div class="col-lg-8 text-end">
+                            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                        <span class="text-dark" style="width: 130px;">Tất cả</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                        <span class="text-dark" style="width: 130px;">Giày Nam</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                        <span class="text-dark" style="width: 130px;">Giày Nữ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                        <span class="text-dark" style="width: 130px;">Bestseller</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                        <span class="text-dark" style="width: 130px;">Sale</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nu7.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.800.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/n6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.750.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/n8.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.500.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.500.000 VND</p>
+                                                       <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nu3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày Nam/Unisex</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.800.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nu1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>GIày Nam/Unisex</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.650.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/n5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày Nam/Unisex</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.600.000 VND</p>
+                                                       <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nam2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày Nam/Unisex</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.800.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nam1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày Nam/Unisex</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.600.000 VND</p>
+                                                       <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nm2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày Nam/Unisex</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.700.000 VND</p>
+                                                       <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nuu1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.800.000 VND</p>
+                                                       <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nuu2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.800.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/best.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>UNISEX NAM/NỮ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.800.000 VND</p>
+                                                      <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nam2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>UNISEX NAM/NỮ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.800.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/n8.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.500.000 VND</p>
+                                                       <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày thời trang nữ</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.500.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/n5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Giày Nam/Unisex</h4>
+                                                    <p>GO WALK</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1.600.000 VND</p>
+                                                        <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="position-relative">
-              <img src="img/1.jpg" class="img-fluid w-100 rounded" alt="" />
-              <div
-                class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
-                style="width: 140px; height: 140px; top: 0; left: 0;"
-              >
-                <h1 style="font-size: 100px;">1</h1>
-                <div class="d-flex flex-column">
-                  <span class="h2 mb-0">BUY</span>
-                  <span class="h4 mb-0">GET</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Banner Section End -->
+        <!-- Fruits Shop End-->
 
-    <!-- Bestsaler Product Start -->
-    <div class="container-fluid py-5">
-      <div class="container py-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-          <h1>SẢN PHẨM NỔI BẬT</h1>
-          <p>Sản phẩm được bán chạy nhất store.</p>
+		<!-- Vesitable Shop Start-->
+        <div class="container-fluid vesitable py-5">
+            <div class="container py-5">
+                <h1 class="mb-0">Chia sẻ hình ảnh phong cách của bạn @FASFE_VN</h1>
+				<p></p>
+                <div class="owl-carousel vegetable-carousel justify-content-center">
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/st1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>KOL</h4>
+                            <div class="d-flex justify-content-between flex-lg-wrap"></div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/st2.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>CHA EUN-WOO</h4>
+                            <div class="d-flex justify-content-between flex-lg-wrap"></div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/st3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>KOL</h4>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/st5.png"class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>KOL</h4>
+                            <div class="d-flex justify-content-between flex-lg-wrap"></div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/st4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Mẫu ảnh nhà HoTh</h4>
+                            <div class="d-flex justify-content-between flex-lg-wrap"></div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/st6.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>CHA EUN-WOO</h4>
+                            <div class="d-flex justify-content-between flex-lg-wrap"></div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/st7.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>JSOL</h4>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-6 col-xl-4">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img
-                    src="img/new2.jpg"
-                    class="img-fluid rounded-circle w-100"
-                    alt=""
-                  />
+        <!-- Vesitable Shop End -->
+
+
+        <!-- Banner Section Start-->
+        <div class="container-fluid banner bg-secondary my-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="py-4">
+                            <h1 class="display-3 text-white">MUA 2 Tính Tiền 1</h1>
+                            <p class="fw-normal display-3 text-dark mb-4">Online và Store</p>
+                            <p class="mb-4 text-dark">Chương trình áp dụng từ ngày 03 đến 06 mỗi tháng </p>
+                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5"><span>MUA NGAY</span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="img/1.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
+                                <h1 style="font-size: 100px;">1</h1>
+                                <div class="d-flex flex-column">
+                                    <span class="h2 mb-0">BUY</span>
+                                    <span class="h4 mb-0">GET</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6">
-                  <a href="#" class="h5">Fashion shoes UNISEX-BR</a>
-                  <div class="d-flex my-3">
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                  </div>
-                  <h4 class="mb-3">1.950.000</h4>
-                  <a
-                    href="Shopdetail.html"
-                    class="btn border border-secondary rounded-pill px-3 text-primary"
-                    >Chi tiết</a
-                  >
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-xl-4">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img
-                    src="img/new1.jpg"
-                    class="img-fluid rounded-circle w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-6">
-                  <a href="#" class="h5">Fashion shoes UNISEX-BL</a>
-                  <div class="d-flex my-3">
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                  </div>
-                  <h4 class="mb-3">1.800.000</h4>
-                  <a
-                    href="Shopdetail.html"
-                    class="btn border border-secondary rounded-pill px-3 text-primary"
-                    >Chi tiết</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img
-                    src="img/new3.jpg"
-                    class="img-fluid rounded-circle w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-6">
-                  <a href="#" class="h5">Fashion shoes UNISEX-GR</a>
-                  <div class="d-flex my-3">
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <h4 class="mb-3">1.950.000</h4>
-                  <a
-                    href="Shopdetail.html"
-                    class="btn border border-secondary rounded-pill px-3 text-primary"
-                    >Chi tiết</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img
-                    src="img/new4.jpg"
-                    class="img-fluid rounded-circle w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-6">
-                  <a href="#" class="h5">Fashion shoes UNISEX-BR</a>
-                  <div class="d-flex my-3">
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <h4 class="mb-3">1.950.000</h4>
-                  <a
-                    href="Shopdetail.html"
-                    class="btn border border-secondary rounded-pill px-3 text-primary"
-                    >Chi tiết</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img
-                    src="img/new5.jpg"
-                    class="img-fluid rounded-circle w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-6">
-                  <a href="#" class="h5">Fashion shoes UNISEX-WHP</a>
-                  <div class="d-flex my-3">
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                  </div>
-                  <h4 class="mb-3">2.000.000</h4>
-                  <a
-                    href="Shopdetail.html"
-                    class="btn border border-secondary rounded-pill px-3 text-primary"
-                    >Chi tiết</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img
-                    src="img/new6.jpg"
-                    class="img-fluid rounded-circle w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-6">
-                  <a href="#" class="h5">Fashion shoes UNISEX-BLBR</a>
-                  <div class="d-flex my-3">
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                    <i class="fas fa-star text-primary"></i>
-                  </div>
-                  <h4 class="mb-3">1.950.000</h4>
-                  <a
-                    href="Shopdetail.html"
-                    class="btn border border-secondary rounded-pill px-3 text-primary"
-                    >Chi tiết</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Bestsaler Product End -->
+        <!-- Banner Section End -->
 
-    <!-- Fact Start -->
-    <div class="container-fluid py-5">
-      <div class="container">
-        <h1>FASFE TỰ HÀO</h1>
-        <div class="bg-light p-5 rounded">
-          <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-6 col-xl-3">
-              <div class="counter rounded p-5">
-                <i class="fa fa-users text-secondary"></i>
-                <h4>Khách hàng hài lòng</h4>
-                <h1>2000</h1>
-              </div>
+
+        <!-- Bestsaler Product Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <h1>SẢN PHẨM NỔI BẬT</h1>
+                    <p>Sản phẩm được bán chạy nhất store.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/new2.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Fashion shoes UNISEX-BR</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+										<i class="fas fa-star text-primary"></i>
+                                       
+                                    </div>
+                                    <h4 class="mb-3">1.950.000</h4>
+                                    <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/new1.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Fashion shoes UNISEX-BL</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                    <h4 class="mb-3">1.800.000</h4>
+                                    <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/new3.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Fashion shoes UNISEX-GR</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">1.950.000</h4>
+                                    <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/new4.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Fashion shoes UNISEX-BR</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">1.950.000</h4>
+                                    <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/new5.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Fashion shoes UNISEX-WHP</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+										<i class="fas fa-star text-primary"></i>
+                                        
+                                    </div>
+                                    <h4 class="mb-3">2.000.000</h4>
+                                    <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/new6.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Fashion shoes UNISEX-BLBR</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+										<i class="fas fa-star text-primary"></i>
+                                        
+                                    </div>
+                                    <h4 class="mb-3">1.950.000</h4>
+                                    <a href="Shopdetail.html" class="btn border border-secondary rounded-pill px-3 text-primary">Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+        <!-- Bestsaler Product End -->
+
+
+        <!-- Fact Start -->
+        <div class="container-fluid py-5">
+            <div class="container">
+				<h1>FASFE TỰ HÀO</h1>
+                <div class="bg-light p-5 rounded">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter  rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Khách hàng hài lòng</h4>
+                                <h1>2000</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter  rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Chất lượng phục vụ</h4>
+                                <h1>99%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter  rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Hợp tác thương hiệu</h4>
+                                <h1>10</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter  rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Sản phẩm có sẵn đến</h4>
+                                <h1>455</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-              <div class="counter rounded p-5">
-                <i class="fa fa-users text-secondary"></i>
-                <h4>Chất lượng phục vụ</h4>
-                <h1>99%</h1>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-              <div class="counter rounded p-5">
-                <i class="fa fa-users text-secondary"></i>
-                <h4>Hợp tác thương hiệu</h4>
-                <h1>10</h1>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-              <div class="counter rounded p-5">
-                <i class="fa fa-users text-secondary"></i>
-                <h4>Sản phẩm có sẵn đến</h4>
-                <h1>455</h1>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Fact Start -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-      <div class="container py-5">
-        <div
-          class="pb-4 mb-4"
-          style="border-bottom: 1px solid rgba(226, 175, 24, 0.5);"
-        >
-          <div class="row g-4">
-            <div class="col-lg-3">
-              <a href="#">
-                <img src="img/logo.ft.png" width="190" />
-              </a>
+        <!-- Fact Start -->
+        
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+          <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                         <div class="col-lg-3">
+                            <a href="#">
+                                <img src="img/logo.ft.png" width="190">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                         <div class="footer-item">
+                            <h4 class="text-light mb-3">Liên hệ với Chúng tôi</h4>
+                            <p>Địa chỉ:03 CVPM Quang Trunng, Tân Chánh Hiệp, Q12, Tp.HCM</p>
+                            <p>Email:ht@thehoth_vn.vn</p>
+                            <p>Phone: 0792129889</p>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+						<div class="footer-item">
+							<h4 class="text-light mb-3">Dịch vụ Thanh toán</h4>
+                            <img src="img/payment.png" class="img-fluid" alt=""> 
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+						<div class="d-flex justify-content-end pt-0">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
-              <div class="position-relative mx-auto">
-                <input
-                  class="form-control border-0 w-100 py-3 px-4 rounded-pill"
-                  type="number"
-                  placeholder="Your Email"
-                />
-                <button
-                  type="submit"
-                  class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
-                  style="top: 0; right: 0;"
-                >
-                  Đăng ký
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="text-light mb-3">Liên hệ với Chúng tôi</h4>
-              <p>Địa chỉ:03 CVPM Quang Trunng, Tân Chánh Hiệp, Q12, Tp.HCM</p>
-              <p>Email:ht@thehoth_vn.vn</p>
-              <p>Phone: 0792129889</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="text-light mb-3">Dịch vụ Thanh toán</h4>
-              <img src="img/payment.png" class="img-fluid" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="d-flex justify-content-end pt-0">
-              <a
-                class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a
-                class="btn btn-outline-secondary btn-md-square rounded-circle"
-                href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
+        <!-- Footer End -->
 
-    <!-- Copyright Start -->
+        <!-- Copyright Start -->
+        
+        <!-- Copyright End -->
 
-    <!-- Copyright End -->
 
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-primary border-3 border-primary rounded-circle back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
 
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -1372,5 +897,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-  </body>
+    </body>
+
 </html>
